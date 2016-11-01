@@ -1,0 +1,23 @@
+{   "manifest_version": 2,
+
+  "name": "Getting started example", 
+  "description": "This extension saves the password for you according to the site. You can next time click the icon
+  again to fill the password", 
+  "version": "1.0",
+
+  "browser_action": 
+  {     
+  	"default_icon": "icon.png",   
+  "default_title": "Save password"   
+  },   
+  "background": {
+  	"scripts": ["popup1.js"]
+  },
+  "permissions": 
+  [
+	"activeTab",     
+	"https://ajax.googleapis.com/",
+	"http://*/*", 
+    "https://*/*"
+	] 
+}
